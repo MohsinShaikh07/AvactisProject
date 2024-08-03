@@ -28,6 +28,13 @@
 <scope>test</scope>
 </dependency>
 </dependencies>
+<!-- Other dependencies -->
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-testng</artifactId>
+        <version>2.13.10</version> <!-- Use the latest version -->
+    </dependency>
+</dependencies>
 <build>
         <plugins>
             <plugin>
