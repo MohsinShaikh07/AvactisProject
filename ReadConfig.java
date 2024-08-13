@@ -13,28 +13,28 @@ public class ReadConfig {
 			FileInputStream input = new FileInputStream("config.properties");
 			prop.load(input);
 			
-			String STOREURL = prop.getProperty("STORE.URL");
-			String ADMINURL = prop.getProperty("ADMIN.URL");
-			String AUTHORIZATIONDETAILS = prop.getProperty("AUTHORIZATION.DETAILS");
-			String ADMINUSERNAME = prop.getProperty("ADMIN.USER.NAME");
-			String ADMINPASSWORD = prop.getProperty("ADMIN.PASSWORD");
-			String EXPLICITMINWAIT = prop.getProperty("EXPLICIT.MIN.WAIT");
-			String EXPLICITMAXWAIT = prop.getProperty("EXPLICIT.MAX.WAIT");
-			String HOMEPAGETITLE = prop.getProperty("HOMEPAGE.TITLE");
-			String REGEMAILID = prop.getProperty("REG.EMAIL.ID");
-			String REGPASSWORD = prop.getProperty("REG.PASSWORD");
-			String REGREPASSWORD = prop.getProperty("REG.REPASSWORD");
-			String REGFIRSTNAME = prop.getProperty("REG.FIRST.NAME");
-			String REGLASTNAME = prop.getProperty("REG.LAST.NAME");
-			String REGCOUNTRY = prop.getProperty("REG.COUNTRY");
-			String REGSTATE = prop.getProperty("REG.STATE");
-			String REGZIP = prop.getProperty("REG.ZIP");
-			String REGCITY = prop.getProperty("REG.CITY");
-			String REGADDRESSLINE1 = prop.getProperty("REG.ADDRESS.LINE.1");
-			String REGADDRESSLINE2 = prop.getProperty("REG.ADDRESS.LINE.1");
-			String REGCONTACT = prop.getProperty("REG.CONTACT");
-			String EMAILID = prop.getProperty("EMAIL.ID");
-			String PASSWORD = prop.getProperty("PASSWORD");
+			String STOREURL = prop.getProperty("store.Url");
+			String ADMINURL = prop.getProperty("admin.Url");
+			String AUTHORIZATIONDETAILS = prop.getProperty("authorization.details");
+			String ADMINUSERNAME = prop.getProperty("admin.User.Name");
+			String ADMINPASSWORD = prop.getProperty("admin.Password");
+			String EXPLICITMINWAIT = prop.getProperty("explicit.Min.Wait");
+			String EXPLICITMAXWAIT = prop.getProperty("explicit.Max.Wait");
+			String HOMEPAGETITLE = prop.getProperty("homepage.Title");
+			String REGEMAILID = prop.getProperty("reg.Email.id");
+			String REGPASSWORD = prop.getProperty("reg.Password");
+			String REGREPASSWORD = prop.getProperty("reg.Repassword");
+			String REGFIRSTNAME = prop.getProperty("reg.First.Name");
+			String REGLASTNAME = prop.getProperty("reg.Last.Name");
+			String REGCOUNTRY = prop.getProperty("reg.Country");
+			String REGSTATE = prop.getProperty("reg.State");
+			String REGZIP = prop.getProperty("reg.Zip");
+			String REGCITY = prop.getProperty("reg.City");
+			String REGADDRESSLINE1 = prop.getProperty("reg.Address.Line.1");
+			String REGADDRESSLINE2 = prop.getProperty("reg.Address.Line.2");
+			String REGCONTACT = prop.getProperty("reg.Contact");
+			String EMAILID = prop.getProperty("email.Id");
+			String DBPASSWORD = prop.getProperty("db.password");
 			
 			System.out.println("STORE URL: " + STOREURL);
 			System.out.println("ADMIN URL: " + ADMINURL);
@@ -57,7 +57,7 @@ public class ReadConfig {
 			System.out.println("REGADDRESSLINE2: " + REGADDRESSLINE2);
 			System.out.println("REGCONTACT: " + REGCONTACT);
 			System.out.println("EMAILID: " + EMAILID);
-			System.out.println("PASSWORD: " + PASSWORD);
+			System.out.println("PASSWORD: " + DBPASSWORD);
 			input.close();
 			
 		} catch (FileNotFoundException e) {
