@@ -35,4 +35,9 @@ public class Cartpage {
         public void proceedToCheckout() {
             proceedToCheckoutButton.click();
     }
+
+		public void verifyCartItems(List<String> expectedProducts) {
+			// TODO Auto-generated method stub
+			
+		}
 }

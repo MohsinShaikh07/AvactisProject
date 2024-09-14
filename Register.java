@@ -1,5 +1,7 @@
 package com.avactis.pages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,6 +10,8 @@ import com.avactis.constants.Constants;
 
 public class Register extends BasePage {
 
+	private By MyAccountfield = By.name("My Account");
+	private By registerfield = By.xpath("//button[@class= 'btn btn-default']");
 	private By emailfield = By.xpath("//input[@name = 'customer_info[Customer][Email]']");
 	private By passwordfield = By.xpath("//input[@name = 'customer_info[Customer][Password]']");
 	private By Retypepassword = By.xpath("//input[@name = 'customer_info[Customer][RePassword]']");
@@ -25,6 +29,8 @@ public class Register extends BasePage {
 	private WebDriver driver;
 	
 	public Register (WebDriver driver) {
+	driver = new ChromeDriver();
+	driver.manage().window().maximize();
 	this.driver = driver;
 	
 	driver.get(Constants.STORE_URL);
@@ -33,6 +39,9 @@ public class Register extends BasePage {
 	
 	public void register (String email, String pass, String Retypepass, String FirstName, String LastName, String Country, 
 			String State, String ZIPpostalcode, String City, String AddressLine1, String AddressLine2, String ContactPhone) {
+	
+	driver.findElement(MyAccountfield).click();
+	driver.findElement(registerfield).click();
 	driver.findElement(emailfield).sendKeys(email);
 	driver.findElement(passwordfield).sendKeys(pass);
 	driver.findElement(Retypepassword).sendKeys(Retypepass);
@@ -46,5 +55,12 @@ public class Register extends BasePage {
 	driver.findElement(AddressLine2field).sendKeys(AddressLine2);
 	driver.findElement(ContactPhonefield).sendKeys(ContactPhone);
 	driver.findElement(Registerbutton).click();
+	
 	}    	
+	public String getTitleAfterLogin() {
+		return driver.getTitle();
 	}
+
+	
+	}
+	

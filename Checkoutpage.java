@@ -80,4 +80,14 @@ public class Checkoutpage {
 		// TODO Auto-generated method stub
 		
 	}
+
+	public void fillCheckoutDetails(String string, String string2, String string3, String string4) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void confirmOrder() {
+		// TODO Auto-generated method stub
+		
+	}
 }

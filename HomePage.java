@@ -21,4 +21,9 @@ public class HomePage {
        driver.findElement(productnamefield2).click();
        driver.findElement(productnamefield3).click();
     }
+
+	public void searchProduct(String product1) {
+		// TODO Auto-generated method stub
+		
+	}
 }

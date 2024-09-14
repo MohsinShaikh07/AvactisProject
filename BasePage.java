@@ -1,5 +1,6 @@
 package com.avactis.pages;
 
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -16,7 +17,7 @@ public class BasePage {
 	 {
 	
 	driver = new ChromeDriver();
-        driver.manage().window().maximize();
+	driver.manage().window().maximize();
 	wait = new WebDriverWait (driver,Duration.ofSeconds(10));
 	
 }
@@ -48,3 +49,4 @@ public class BasePage {
 	        }
 }
 }
+

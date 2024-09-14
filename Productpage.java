@@ -19,4 +19,9 @@ public class Productpage {
 	       driver.findElement(Addtocartfield).click();
 	       
 	    }
+
+	public void addProductToCart() {
+		// TODO Auto-generated method stub
+		
+	}
 }

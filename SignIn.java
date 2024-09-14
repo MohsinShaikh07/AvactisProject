@@ -24,5 +24,12 @@ public class SignIn extends BasePage {
 	driver.findElement(passwordfield).sendKeys(password);
 	driver.findElement(signinbutton).click();
 	}
-	
+
+        public String getTitleAfterLogin() {
+		// TODO Auto-generated method stub
+		return driver.getTitle();
+	}
 }
+
+	
+
